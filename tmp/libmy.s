@@ -1,0 +1,1 @@
+segment .data	mystr db "helloyou",0segment .bsssegment .text	global thingo	extern putsthingo:		push ebp	mov ebp, esp		;pusha		push mystr	call puts	;;	;popa		mov esp, ebp	pop ebp		;popa	;mov eax, 0		;leave	ret		 
